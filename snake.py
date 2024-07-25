@@ -2,9 +2,9 @@
 import math
 
 def print_star_pattern(n,c):
-    mid = n/2 + 1
-    for i in range(1, n + 1):
-        y = math.floor((3*c*abs(mid-i))**2)
+    mid = n/2
+    for i in range(0, n + 1):
+        y = math.floor((2*c*abs(mid-i))**2)
         print(' ' * y + '*')
 
 def main():
